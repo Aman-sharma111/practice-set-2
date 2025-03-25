@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .first-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .first-part .image {
+  width: 100%;
+}
+main .first-part .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .first-part .paragraph {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .first-part .paragraph p {
+  font-size: 1.2em;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: 200;
+  opacity: 0.8;
+}
+main .second-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .second-part .image2 {
+  width: 100%;
+}
+main .second-part .image2 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .second-part .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .second-part .bottom .theory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .second-part .bottom .theory h1 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 380;
+  line-height: 1;
+  opacity: 0.8;
+}
+main .second-part .bottom .theory p {
+  font-family: monospace;
+  font-size: 1.5em;
+  font-weight: 540;
+  line-height: 1.3;
+}
+main .second-part .bottom .service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .second-part .bottom .service .first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .second-part .bottom .service .first p {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main .third-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .third-part .image3 {
+  width: 100%;
+}
+main .third-part .image3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+}
+main .third-part .unique {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+main .third-part .unique p {
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+main .third-part .unique .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .third-part .unique .content h1 {
+  font-size: 3rem;
+  font-weight: 350;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+main .third-part .unique .content p {
+  margin-top: 0;
+  text-transform: none;
+  font-size: 1.5rem;
+  writing-mode: initial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 0.5;
+}
+
+@media (min-width: 1020px) {
+  main {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  main .second-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+  main .second-part .bottom {
+    width: 100%;
+  }
+  main .second-part .bottom .theory {
+    width: 100%;
+  }
+  main .second-part .bottom .theory h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+  main .second-part .bottom .theory p {
+    font-size: 1.5rem;
+  }
+  main .second-part .bottom .theory .service {
+    width: 100%;
+    margin-bottom: auto;
+  }
+  main .third-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  main .third-part .image3 {
+    width: 45%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  main .third-part .unique {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .third-part .unique .content {
+    width: 100%;
+  }
+  main .third-part .unique .content h1 {
+    width: 100%;
+    font-size: 6rem;
+    padding-top: 1.5rem;
+  }
+  main .third-part .unique .content p {
+    font-size: 2rem;
+    width: 75%;
+    margin-top: auto;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  main {
+    padding: 3rem;
+  }
+  main .second-part {
+    width: 100%;
+  }
+  main .second-part .bottom {
+    width: 100%;
+  }
+  main .second-part .bottom .theory {
+    width: 100%;
+  }
+  main .second-part .bottom .theory h1 {
+    font-size: 4rem;
+  }
+  main .second-part .bottom .theory p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  main .second-part .bottom .service {
+    width: 100%;
+  }
+  main .second-part .bottom .service .first {
+    width: 100%;
+  }
+  main .second-part .bottom .service .first p {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 750px) {
+  main {
+    padding: 3rem;
+  }
+  main .second-part {
+    width: 100%;
+  }
+  main .second-part .bottom {
+    width: 100%;
+  }
+  main .second-part .bottom .theory {
+    width: 100%;
+  }
+  main .second-part .bottom .theory h1 {
+    font-size: 4rem;
+  }
+  main .second-part .bottom .theory p {
+    font-size: 1.6rem;
+  }
+  main .second-part .bottom .service {
+    width: 100%;
+  }
+  main .second-part .bottom .service .first {
+    width: 100%;
+  }
+  main .second-part .bottom .service .first p {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  main .third-part {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+  }
+  main .third-part .unique {
+    width: 100%;
+  }
+  main .third-part .unique .content {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .third-part .unique .content p {
+    font-size: 1.3rem;
+    word-spacing: 0.8rem;
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=style.css.map */
